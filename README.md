@@ -1,1 +1,1 @@
-# jekyll-example
+# Jekyll Example
