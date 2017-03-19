@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Jekyll-Doku</title>
+  <meta name="description" content="Das ist die Dokumentation von Moritz Schaubeck und Sebastian Benda. Sie befasst sich mit dem Thema Jekyll (einem statischen Webseitengenerator).
+">
+
+  
+  
+  <link rel="stylesheet" href="http://localhost:4000/assets/style.css">
+
+  <link rel="canonical" href="http://localhost:4000/Jekyll-Doku/">
+  <link rel="alternate" type="application/rss+xml" title="Jekyll Docu" href="http://localhost:4000/feed.xml">
+
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+
+
+  <body>
+
+    <header class="border-bottom-thick px-2 clearfix">
+  <div class="left sm-width-full py-1 mt-1 mt-lg-0">
+    <a class="align-middle link-primary text-accent" href="/">
+      Jekyll Docu
+    </a>
+  </div>
+  <div class="right sm-width-full">
+    <ul class="list-reset mt-lg-1 mb-2 mb-lg-1">
+      
+        
+        <li class="inline-block">
+          <a class="align-middle link-primary mr-2 mr-lg-0 ml-lg-2" href="/Jekyll-Doku/">
+            Jekyll-Doku
+          </a>
+        </li>
+        
+      
+        
+        <li class="inline-block">
+          <a class="align-middle link-primary mr-2 mr-lg-0 ml-lg-2" href="/about/">
+            About
+          </a>
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </div>
+</header>
+
+
+    <div>
+      <article class="container mx-auto px-2 mt2 mb4">
+  <header>
+    <h1 class="h0 py-4 mt-3">Jekyll-Doku</h1>
+  </header>
+  <div class="col-4 sm-width-full border-top-thin">
+  </div>
+  <div class="prose mb-4 py-4">
+    <ul id="markdown-toc">
+  <li><a href="#was-ist-jekyll" id="markdown-toc-was-ist-jekyll">Was ist Jekyll?</a></li>
+  <li><a href="#installation-windows" id="markdown-toc-installation-windows">Installation Windows:</a></li>
+  <li><a href="#jekyll-themes" id="markdown-toc-jekyll-themes">Jekyll Themes:</a>    <ul>
+      <li><a href="#gem-basiertes-themes" id="markdown-toc-gem-basiertes-themes">Gem-basiertes Themes:</a></li>
+      <li><a href="#classic-themes" id="markdown-toc-classic-themes">Classic Themes:</a></li>
+    </ul>
+  </li>
+  <li><a href="#wie-wird-das-html-generiert" id="markdown-toc-wie-wird-das-html-generiert">Wie wird das HTML generiert?</a></li>
+</ul>
+
+<h1 id="was-ist-jekyll">Was ist Jekyll?</h1>
+
+<p>Jekyll ist ein statischer Webseitengenerator, welcher normale Markup-Dateien (z. B. erstellt mit Markdown) in <strong>statisches HTML</strong> umwandelt. 
+Außerdem basiert GitHub auf Jekyll, somit wird ermöglicht seine eigene Website kostenlos auf einem Github-Server zu hosten.</p>
+
+<p>Desweiteren ist es für den Benutzer möglich seine eigenen Blogs sehr leicht zu ändern und zu ersetzen. Dazu müssen nur die gespeicherten <strong>Markup-Dateien</strong> in dem <strong>_posts</strong> Ordner verändert, 
+Jekyll gestartet und somit eine statische HTML-Seite generiert werden.</p>
+
+<h1 id="installation-windows">Installation Windows:</h1>
+
+<p>Um Jekyll auf seinem eigenen Windows-Rechner nutzen zu können sollte man sich den Package-Manager <strong><a href="https://chocolatey.org/install">Chocolatey</a></strong> installieren. 
+Nachdem die Installation ausgeführt wurde öffnet man die Konsole als Administrator. Dort muss der Befehl <code class="highlighter-rouge">choco install ruby –y</code> eingegeben werden, welcher die Installation von der aktuellsten Ruby-Version ausführt.</p>
+
+<p>Jetzt gibt es die Möglichkeit seine erste Testseite mit dem Befehl <code class="highlighter-rouge">jekyll new Ordnername</code> zu erstellen. Um den Testserver zu starten muss man in den erstellten Ordner navigieren und dort den Befehl <code class="highlighter-rouge">jekyll serve</code> ausführen. 
+Die domain unter der die lokale Seite erreichbar ist wird nach einer kurzen Ladezeit in der Konsole angezeigt.</p>
+
+<h1 id="jekyll-themes">Jekyll Themes:</h1>
+
+<p>Ein Theme kann in zwei unterschiedliche Arten installiert werden.</p>
+
+<h2 id="gem-basiertes-themes">Gem-basiertes Themes:</h2>
+
+<p>Eine Art ist das Theme als Gem zu installieren, dadurch kann man leichter die verschiedenen Themes austauschen. <strong><a href="https://github.com/planetjekyll/awesome-jekyll-themes#official-themes">Hier</a></strong> befindet sich eine Liste von Themes die man per Ruby installieren kann.</p>
+
+<p>Im Folgenden wird das Standart-Theme <strong>Minima</strong> durch das <strong>Swiss</strong> Theme ausgetauscht.</p>
+<ol>
+  <li>Installation vom Theme <code class="highlighter-rouge">Jekyll-Swiss</code>: Um dieses Theme zu installieren muss der Befehl <code class="highlighter-rouge">gem install jekyll-swiss</code> in die Konsole eingegeben werden.</li>
+  <li>Bearbeiten der <strong>Gemfile</strong>: In der Gemfile muss die Zeile <code class="highlighter-rouge">gem "minima", "~&gt; 2.0"</code> durch <code class="highlighter-rouge">gem "jekyll-swiss", "0.4.0"</code> ersetzt werden. Die Version dahinter kann jedoch weggelassen werden <code class="highlighter-rouge">gem "jekyll-swiss"</code>.</li>
+  <li>Bearbeiten der <strong>_config.yml</strong>: In der _config.yml muss das Theme geändert werden. Die Zeile <code class="highlighter-rouge">theme: minima</code> muss durch <code class="highlighter-rouge">theme: jekyll-swiss</code> ersetzt werden.</li>
+  <li>Neustarten des Webservers.</li>
+</ol>
+
+<p>Der große Vorteil dieser Themes ist, dass man so sehr leicht verschiedene Themes austauschen und ausprobieren kann ohne größeren Aufwand.</p>
+
+<h2 id="classic-themes">Classic Themes:</h2>
+
+<p>Die andere Möglichkeit ist, das Theme herunterzuladen z.B. als .zip-Datei. Auf der Website <strong><a href="http://jekyllthemes.org/">Jekyll-Themes</a></strong> befinden sich eine Liste sehr viele Themes zum Herunterladen.</p>
+
+<p>Um das Theme zu benutzen muss die .zip-Datei extrahiert werden. Der erstellte Ordner ist nun ein leere Jekyll-Website mit dem heruntergeladenen Theme. 
+Nun kann man in den meisten Fällen wie gewohnt in <code class="highlighter-rouge">_post</code> seine Einträge erstellen und den Webserver starten.</p>
+
+<h1 id="wie-wird-das-html-generiert">Wie wird das HTML generiert?</h1>
+
+<p>Die vom Benutzer mit einer beliebigen <strong>Markup-Sprache</strong> (Markdown, Textile usw.) erstellten Dateien werden von <strong>Jekyll</strong> durch die Endung der Datei, bei Markdown <strong>(“.markdown”)</strong> erkannt 
+und leitet diese Datei an den passenden Konverter (bei Markdown normalerweise <strong><a href="https://kramdown.gettalong.org/">KramDown</a></strong>) weiter, welcher die Markup-sprache in HTML umwandelt. 
+Zusammen mit einem ausgesuchtem oder einem benutzerdefiniertem <strong><a href="http://jekyllthemes.org/">Theme</a></strong> wird der Inhalt der Seite an eine <strong><a href="https://jekyllrb.com/docs/templates/">Template-Engine</a></strong> (in diesem Fall Liquid) weitergegeben, 
+welche es dem Nutzer unmöglich macht willkürlichen Code auf der Seite auszuführen.</p>
+
+  </div>
+</article>
+
+    </div>
+
+    <div class="border-top-thin clearfix mt-2 mt-lg-4">
+  <div class="container mx-auto px-2">
+    <p class="col-8 sm-width-full left py-2 mb-0">This project is maintained by <a class="text-accent" href="https://github.com/jekyll">jekyll</a></p>
+    <ul class="list-reset right clearfix sm-width-full py-2 mb-2 mb-lg-0">
+      <li class="inline-block mr-1">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-hashtags="Jekyll Docu">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      </li>
+      <li class="inline-block">
+        <a class="github-button" href="https://github.com/jekyll/" data-icon="octicon-star" data-count-href="jekyll//stargazers" data-count-api="/repos/jekyll/#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star jekyll/ on GitHub">Star</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+  </body>
+
+</html>
