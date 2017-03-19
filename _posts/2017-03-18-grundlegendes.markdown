@@ -8,7 +8,7 @@ Konfiguration der _config.yml:
 
 Um die Startseite des Blogs anzupassen öffnet man die **_config.yml**. Dort kann der Titel bei dem Unterpunkt ``title:`` beliebig angepasst werden. Außerdem ist es möglich der Seite eine Beschreibung hinzuzufügen. 
 Dies ist durch den Unterpunkt ``description:`` möglich. Weiterhin kann der Konverter bei dem Gliederungspunkt ``markdown:`` angepasst werden. Standardmäßig steht dieser auf **kranmdown** was die besten Möglichkeiten bietet.
-Bei ``exclude:`` werden die Dateien eingetragen, die von dieser Konfiguration ausgeschlossen sind und somit auch nicht auf der seite angezeigt werden.
+Bei ``exclude:`` werden die Dateien eingetragen, die von dieser Konfiguration ausgeschlossen sind und somit auch nicht auf der Seite angezeigt werden.
 
 Erstellung eines Posts:
 
@@ -47,7 +47,7 @@ Danach kann der Inhalt eingefügt werden.
 Bild in einem Post hinzufügen:
 
 Um ein Bild in einen Post hinzuzufügen muss zuerst ein neuer Ordner erstellt werden. Dem Ordner kann einen beliebigen Namen besitzen, jedoch darf er nicht mit einen "_" anfangen. 
-Das Bild in den neu angelegten Ordner kopieren. Nun muss man im Post an der gewüschten Stelle folgendes eingeben: 
+Das Bild in den neu angelegten Ordner kopieren. Nun muss man im Post an der gewünschten Stelle folgendes eingeben: 
 
 `![Name-des-Bildes-in-HTML]({{ site.baseurl }}/angelegter_Ordner/Name_des_Bildes.DateiFormat)`
 

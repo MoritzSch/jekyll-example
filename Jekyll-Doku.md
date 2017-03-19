@@ -24,7 +24,9 @@ Nachdem die Installation ausgeführt wurde öffnet man die Konsole als Administr
 Nun muss der Befehl ``gem install jekyll`` in die Konsole eingegeben werden um das "gem" jekyll zu installieren, welches benötigt wird um die HTML Seite zu generieren.
 
 Jetzt gibt es die Möglichkeit seine erste Testseite mit dem Befehl ``jekyll new Ordnername`` zu erstellen. Um den Testserver zu starten muss man in den erstellten Ordner navigieren und dort den Befehl ``jekyll serve`` ausführen. 
-Die Domain unter der die lokale Seite erreichbar ist wird nach einer kurzen Ladezeit in der Konsole angezeigt. Auf der entstandenen Website sieht man das Jekyll-Standard-Theme "minima". Die Seite sollte nun wie folgt aussehen:
+Die Domain unter der die lokale Seite erreichbar ist wird nach einer kurzen Ladezeit in der Konsole angezeigt.
+
+Auf der entstandenen Website sieht man das Jekyll-Standard-Theme "minima". Die Seite sollte nun wie folgt aussehen:
 
 ![Jekyll-Minima]({{ site.baseurl }}/img/neue_jekyll_seite.JPG)
 
@@ -35,7 +37,7 @@ Die Domain unter der die lokale Seite erreichbar ist wird nach einer kurzen Lade
 
 Um die Startseite des Blogs anzupassen öffnet man die **_config.yml**. Dort kann der Titel bei dem Unterpunkt ``title:`` beliebig angepasst werden. Außerdem ist es möglich der Seite eine Beschreibung hinzuzufügen. 
 Dies ist durch den Unterpunkt ``description:`` möglich. Weiterhin kann der Konverter bei dem Gliederungspunkt ``markdown:`` angepasst werden. Standardmäßig steht dieser auf **kranmdown** was die besten Möglichkeiten bietet.
-Bei ``exclude:`` werden die Dateien eingetragen, die von dieser Konfiguration ausgeschlossen sind und somit auch nicht auf der seite angezeigt werden.
+Bei ``exclude:`` werden die Dateien eingetragen, die von dieser Konfiguration ausgeschlossen sind und somit auch nicht auf der Seite angezeigt werden.
 
 
 ## Erstellung eines Posts:
@@ -75,7 +77,7 @@ Danach kann der Inhalt eingefügt werden.
 ## Bild in einem Post hinzufügen:
 
 Um ein Bild in einen Post hinzuzufügen muss zuerst ein neuer Ordner erstellt werden. Dem Ordner kann einen beliebigen Namen besitzen, jedoch darf er nicht mit einen "_" anfangen. 
-Das Bild in den neu angelegten Ordner kopieren. Nun muss man im Post an der gewüschten Stelle folgendes eingeben: 
+Das Bild in den neu angelegten Ordner kopieren. Nun muss man im Post an der gewünschten Stelle folgendes eingeben: 
 
 `![Name-des-Bildes-in-HTML]({{ site.baseurl }}/angelegter_Ordner/Name_des_Bildes.DateiFormat)`
 

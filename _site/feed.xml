@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.4.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-03-19T17:44:21+01:00</updated><id>http://localhost:4000//</id><title type="html">Jekyll Doku</title><subtitle>Das ist die Dokumentation von Moritz Schaubeck und Sebastian Benda. Sie befasst sich mit dem Thema Jekyll (einem statischen Webseitengenerator).
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.4.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-03-19T17:54:21+01:00</updated><id>http://localhost:4000//</id><title type="html">Jekyll Doku</title><subtitle>Das ist die Dokumentation von Moritz Schaubeck und Sebastian Benda. Sie befasst sich mit dem Thema Jekyll (einem statischen Webseitengenerator).
 </subtitle><entry><title type="html">Was ist Jekyll?</title><link href="http://localhost:4000/jekyll/update/2017/03/18/was-ist-jekyll.html" rel="alternate" type="text/html" title="Was ist Jekyll?" /><published>2017-03-18T23:00:00+01:00</published><updated>2017-03-18T23:00:00+01:00</updated><id>http://localhost:4000/jekyll/update/2017/03/18/was-ist-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2017/03/18/was-ist-jekyll.html">&lt;p&gt;Jekyll ist ein statischer Webseitengenerator, welcher normale Markup-Dateien (z. B. erstellt mit Markdown) in &lt;strong&gt;statisches HTML&lt;/strong&gt; umwandelt. 
 Außerdem basiert GitHub auf Jekyll, somit wird ermöglicht seine eigene Website kostenlos auf einem Github-Server zu hosten.&lt;/p&gt;
 
@@ -12,13 +12,15 @@ Nachdem die Installation ausgeführt wurde öffnet man die Konsole als Administr
 &lt;p&gt;Nun muss der Befehl &lt;code class=&quot;highlighter-rouge&quot;&gt;gem install jekyll&lt;/code&gt; in die Konsole eingegeben werden um das “gem” jekyll zu installieren, welches benötigt wird um die HTML Seite zu generieren.&lt;/p&gt;
 
 &lt;p&gt;Jetzt gibt es die Möglichkeit seine erste Testseite mit dem Befehl &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll new Ordnername&lt;/code&gt; zu erstellen. Um den Testserver zu starten muss man in den erstellten Ordner navigieren und dort den Befehl &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt; ausführen. 
-Die Domain unter der die lokale Seite erreichbar ist wird nach einer kurzen Ladezeit in der Konsole angezeigt. Auf der entstandenen Website sieht man das Jekyll-Standard-Theme “minima”. Die Seite sollte nun wie folgt aussehen:&lt;/p&gt;
+Die Domain unter der die lokale Seite erreichbar ist wird nach einer kurzen Ladezeit in der Konsole angezeigt.&lt;/p&gt;
+
+&lt;p&gt;Auf der entstandenen Website sieht man das Jekyll-Standard-Theme “minima”. Die Seite sollte nun wie folgt aussehen:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/img/neue_jekyll_seite.JPG&quot; alt=&quot;Jekyll-Minima&quot; /&gt;&lt;/p&gt;</content><summary type="html">Installation Windows:</summary></entry><entry><title type="html">Grundlegende Einstellungen</title><link href="http://localhost:4000/jekyll/update/2017/03/18/grundlegendes.html" rel="alternate" type="text/html" title="Grundlegende Einstellungen" /><published>2017-03-18T21:00:00+01:00</published><updated>2017-03-18T21:00:00+01:00</updated><id>http://localhost:4000/jekyll/update/2017/03/18/grundlegendes</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2017/03/18/grundlegendes.html">&lt;p&gt;Konfiguration der _config.yml:&lt;/p&gt;
 
 &lt;p&gt;Um die Startseite des Blogs anzupassen öffnet man die &lt;strong&gt;_config.yml&lt;/strong&gt;. Dort kann der Titel bei dem Unterpunkt &lt;code class=&quot;highlighter-rouge&quot;&gt;title:&lt;/code&gt; beliebig angepasst werden. Außerdem ist es möglich der Seite eine Beschreibung hinzuzufügen. 
 Dies ist durch den Unterpunkt &lt;code class=&quot;highlighter-rouge&quot;&gt;description:&lt;/code&gt; möglich. Weiterhin kann der Konverter bei dem Gliederungspunkt &lt;code class=&quot;highlighter-rouge&quot;&gt;markdown:&lt;/code&gt; angepasst werden. Standardmäßig steht dieser auf &lt;strong&gt;kranmdown&lt;/strong&gt; was die besten Möglichkeiten bietet.
-Bei &lt;code class=&quot;highlighter-rouge&quot;&gt;exclude:&lt;/code&gt; werden die Dateien eingetragen, die von dieser Konfiguration ausgeschlossen sind und somit auch nicht auf der seite angezeigt werden.&lt;/p&gt;
+Bei &lt;code class=&quot;highlighter-rouge&quot;&gt;exclude:&lt;/code&gt; werden die Dateien eingetragen, die von dieser Konfiguration ausgeschlossen sind und somit auch nicht auf der Seite angezeigt werden.&lt;/p&gt;
 
 &lt;p&gt;Erstellung eines Posts:&lt;/p&gt;
 
@@ -55,7 +57,7 @@ permalink: /Jekyll-Doku/
 &lt;p&gt;Bild in einem Post hinzufügen:&lt;/p&gt;
 
 &lt;p&gt;Um ein Bild in einen Post hinzuzufügen muss zuerst ein neuer Ordner erstellt werden. Dem Ordner kann einen beliebigen Namen besitzen, jedoch darf er nicht mit einen “_” anfangen. 
-Das Bild in den neu angelegten Ordner kopieren. Nun muss man im Post an der gewüschten Stelle folgendes eingeben:&lt;/p&gt;
+Das Bild in den neu angelegten Ordner kopieren. Nun muss man im Post an der gewünschten Stelle folgendes eingeben:&lt;/p&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;![Name-des-Bildes-in-HTML](/angelegter_Ordner/Name_des_Bildes.DateiFormat)&lt;/code&gt;&lt;/p&gt;
 
