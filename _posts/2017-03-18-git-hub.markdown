@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "Git-Hub"
+date:   2017-03-18 19:00:00 +0100
+categories: jekyll update
+---
+
+Git-Hub:
+
+Damit ein Jekyll Webserver auf Git-Hub funktioniert muss die Datei **.gitlab-ci.yml** mit dem Folgenden Inhalt eingefügt werden:
+
+```
+image: ruby
+
+pages:
+  stage: build
+  script:
+  - gem install jekyll
+  - jekyll build -d public
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
+ ```
+
+ 
