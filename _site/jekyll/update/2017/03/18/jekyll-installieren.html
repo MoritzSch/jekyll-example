@@ -64,7 +64,7 @@
       <article class="container px-2 mx-auto mb4" itemscope itemtype="http://schema.org/BlogPosting">
   <h1 class="h0 col-9 sm-width-full py-4 mt-3 inline-block" itemprop="name headline">Jekyll installieren</h1>
   <div class="col-4 sm-width-full mt-1 border-top-thin ">
-    <p class="mb-3 py-2 bold h4"><time datetime="2017-03-18T16:00:00+01:00" itemprop="datePublished">Mar 18, 2017</time></p>
+    <p class="mb-3 py-2 bold h4"><time datetime="2017-03-18T22:00:00+01:00" itemprop="datePublished">Mar 18, 2017</time></p>
   </div>
 
   <div class="prose" itemprop="articleBody">
@@ -73,8 +73,12 @@
 <p>Um Jekyll auf seinem eigenen Windows-Rechner nutzen zu können sollte man sich den Package-Manager <strong><a href="https://chocolatey.org/install">Chocolatey</a></strong> installieren. 
 Nachdem die Installation ausgeführt wurde öffnet man die Konsole als Administrator. Dort muss der Befehl <code class="highlighter-rouge">choco install ruby –y</code> eingegeben werden, welcher die Installation von der aktuellsten Ruby-Version ausführt.</p>
 
+<p>Nun muss der Befehl <code class="highlighter-rouge">gem install jekyll</code> in die Konsole eingegeben werden um das “gem” jekyll zu installieren, welches benötigt wird um die HTML Seite zu generieren.</p>
+
 <p>Jetzt gibt es die Möglichkeit seine erste Testseite mit dem Befehl <code class="highlighter-rouge">jekyll new Ordnername</code> zu erstellen. Um den Testserver zu starten muss man in den erstellten Ordner navigieren und dort den Befehl <code class="highlighter-rouge">jekyll serve</code> ausführen. 
-Die Domain unter der die lokale Seite erreichbar ist wird nach einer kurzen Ladezeit in der Konsole angezeigt.</p>
+Die Domain unter der die lokale Seite erreichbar ist wird nach einer kurzen Ladezeit in der Konsole angezeigt. Auf der entstandenen Website sieht man das Jekyll-Standard-Theme “minima”. Die Seite sollte nun wie folgt aussehen:</p>
+
+<p><img src="/img/neue_jekyll_seite.JPG" alt="Jekyll-Minima" /></p>
 
   </div>
 
@@ -86,19 +90,19 @@ Die Domain unter der die lokale Seite erreichbar ist wird nach einer kurzen Lade
 
 
   <div class="col-4 sm-width-full left mr-lg-4 mt-3">
-    <a class="no-underline border-top-thin py-1 block" href="http://localhost:4000/jekyll/update/2017/03/18/was-ist-jekyll.html">
+    <a class="no-underline border-top-thin py-1 block" href="http://localhost:4000/jekyll/update/2017/03/18/grundlegendes.html">
       <span class="h5 bold text-accent">Previous</span>
-      <p class="bold h3 link-primary mb-1">Was ist Jekyll?</p>
-      <p>Jekyll ist ein statischer Webseitengenerator, welcher normale Markup-Dateien (z. B. erstellt mit Markdown) in statisches HTML umwandelt. Außerdem basiert GitHub...</p>
+      <p class="bold h3 link-primary mb-1">Grundlegende Einstellungen</p>
+      <p>Konfiguration der _config.yml: Um die Startseite des Blogs anzupassen öffnet man die _config.yml. Dort kann der Titel bei dem Unterpunkt...</p>
     </a>
   </div>
   
   
   <div class="col-4 sm-width-full left mt-3">
-    <a class="no-underline border-top-thin py-1 block" href="http://localhost:4000/jekyll/update/2017/03/18/jekyll-themes.html">
+    <a class="no-underline border-top-thin py-1 block" href="http://localhost:4000/jekyll/update/2017/03/18/was-ist-jekyll.html">
       <span class="h5 bold text-accent">Next</span>
-      <p class="bold h3 link-primary mb-1">Jekyll Themes</p>
-      <p>Jekyll Themes: Ein Theme kann in zwei unterschiedliche Arten installiert werden. Gem-basiertes Themes: Eine Art ist das Theme als Gem...</p>
+      <p class="bold h3 link-primary mb-1">Was ist Jekyll?</p>
+      <p>Jekyll ist ein statischer Webseitengenerator, welcher normale Markup-Dateien (z. B. erstellt mit Markdown) in **statisches HTML** umwandelt. Außerdem basiert GitHub...</p>
     </a>
   </div>
 

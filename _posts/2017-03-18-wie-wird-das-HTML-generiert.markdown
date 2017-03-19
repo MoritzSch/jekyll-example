@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Wie wird das HTML generiert?"
-date:   2017-03-18 18:00:00 +0100
+date:   2017-03-18 19:00:00 +0100
 categories: jekyll update
 ---
 Die vom Benutzer mit einer beliebigen **Markup-Sprache** (Markdown, Textile usw.) erstellten Dateien werden von **Jekyll** durch die Endung der Datei, bei Markdown **(".markdown")** erkannt 

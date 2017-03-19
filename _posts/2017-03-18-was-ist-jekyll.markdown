@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Was ist Jekyll?"
-date:   2017-03-18 15:00:00 +0100
+date:   2017-03-18 23:00:00 +0100
 categories: jekyll update
 ---
 Jekyll ist ein statischer Webseitengenerator, welcher normale Markup-Dateien (z. B. erstellt mit Markdown) in **statisches HTML** umwandelt. 

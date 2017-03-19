@@ -72,12 +72,20 @@
     <ul id="markdown-toc">
   <li><a href="#was-ist-jekyll" id="markdown-toc-was-ist-jekyll">Was ist Jekyll?</a></li>
   <li><a href="#installation-windows" id="markdown-toc-installation-windows">Installation Windows:</a></li>
+  <li><a href="#grundlegende-einstellungen" id="markdown-toc-grundlegende-einstellungen">Grundlegende Einstellungen:</a>    <ul>
+      <li><a href="#konfiguration-der-_configyml" id="markdown-toc-konfiguration-der-_configyml">Konfiguration der _config.yml:</a></li>
+      <li><a href="#erstellung-eines-posts" id="markdown-toc-erstellung-eines-posts">Erstellung eines Posts:</a></li>
+      <li><a href="#erstellung-eines-menüpunktes" id="markdown-toc-erstellung-eines-menüpunktes">Erstellung eines Menüpunktes:</a></li>
+      <li><a href="#bild-in-einem-post-hinzufügen" id="markdown-toc-bild-in-einem-post-hinzufügen">Bild in einem Post hinzufügen:</a></li>
+    </ul>
+  </li>
   <li><a href="#jekyll-themes" id="markdown-toc-jekyll-themes">Jekyll Themes:</a>    <ul>
       <li><a href="#gem-basiertes-themes" id="markdown-toc-gem-basiertes-themes">Gem-basiertes Themes:</a></li>
       <li><a href="#classic-themes" id="markdown-toc-classic-themes">Classic Themes:</a></li>
     </ul>
   </li>
   <li><a href="#wie-wird-das-html-generiert" id="markdown-toc-wie-wird-das-html-generiert">Wie wird das HTML generiert?</a></li>
+  <li><a href="#git-hub" id="markdown-toc-git-hub">Git-Hub:</a></li>
 </ul>
 
 <h1 id="was-ist-jekyll">Was ist Jekyll?</h1>
@@ -93,8 +101,65 @@ Jekyll gestartet und somit eine statische HTML-Seite generiert werden.</p>
 <p>Um Jekyll auf seinem eigenen Windows-Rechner nutzen zu können sollte man sich den Package-Manager <strong><a href="https://chocolatey.org/install">Chocolatey</a></strong> installieren. 
 Nachdem die Installation ausgeführt wurde öffnet man die Konsole als Administrator. Dort muss der Befehl <code class="highlighter-rouge">choco install ruby –y</code> eingegeben werden, welcher die Installation von der aktuellsten Ruby-Version ausführt.</p>
 
+<p>Nun muss der Befehl <code class="highlighter-rouge">gem install jekyll</code> in die Konsole eingegeben werden um das “gem” jekyll zu installieren, welches benötigt wird um die HTML Seite zu generieren.</p>
+
 <p>Jetzt gibt es die Möglichkeit seine erste Testseite mit dem Befehl <code class="highlighter-rouge">jekyll new Ordnername</code> zu erstellen. Um den Testserver zu starten muss man in den erstellten Ordner navigieren und dort den Befehl <code class="highlighter-rouge">jekyll serve</code> ausführen. 
-Die Domain unter der die lokale Seite erreichbar ist wird nach einer kurzen Ladezeit in der Konsole angezeigt.</p>
+Die Domain unter der die lokale Seite erreichbar ist wird nach einer kurzen Ladezeit in der Konsole angezeigt. Auf der entstandenen Website sieht man das Jekyll-Standard-Theme “minima”. Die Seite sollte nun wie folgt aussehen:</p>
+
+<p><img src="/img/neue_jekyll_seite.JPG" alt="Jekyll-Minima" /></p>
+
+<h1 id="grundlegende-einstellungen">Grundlegende Einstellungen:</h1>
+
+<h2 id="konfiguration-der-_configyml">Konfiguration der _config.yml:</h2>
+
+<p>Um die Startseite des Blogs anzupassen öffnet man die <strong>_config.yml</strong>. Dort kann der Titel bei dem Unterpunkt <code class="highlighter-rouge">title:</code> beliebig angepasst werden. Außerdem ist es möglich der Seite eine Beschreibung hinzuzufügen. 
+Dies ist durch den Unterpunkt <code class="highlighter-rouge">description:</code> möglich. Weiterhin kann der Konverter bei dem Gliederungspunkt <code class="highlighter-rouge">markdown:</code> angepasst werden. Standardmäßig steht dieser auf <strong>kranmdown</strong> was die besten Möglichkeiten bietet.
+Bei <code class="highlighter-rouge">exclude:</code> werden die Dateien eingetragen, die von dieser Konfiguration ausgeschlossen sind und somit auch nicht auf der seite angezeigt werden.</p>
+
+<h2 id="erstellung-eines-posts">Erstellung eines Posts:</h2>
+
+<p>Um einen neuen Post zu erstellen müssen erst einige Konfigurationen getroffen werden. Die Datei, die den Post enthalten soll, muss im Namen immer ein Datum im Folgenden Format enthalten <code class="highlighter-rouge">2017-03-14-examplename</code>,
+des Weiteren sollte immer mit der Dateiendung <strong>.markdown</strong> verwendet werden. Außerdem ist es nötig die Datei mit einem <code class="highlighter-rouge">---</code> zu starten. Unter diesen drei Bindestrichen werden die Grundlegenden YAML Anweisungen des Dokuments festgelegt. 
+Grundlegende Parameter sind: <code class="highlighter-rouge">layout:</code> welcher bei einem Post auf <code class="highlighter-rouge">layout: post</code> gesetzt ist, einem Titel: <code class="highlighter-rouge">title: "exampleTitle"</code> und dem Datum: <code class="highlighter-rouge">date:2017-03-19 14:07:30 +0100</code>. Diese YAML Anweisungen werden auch wieder durch <code class="highlighter-rouge">---</code> beendet.</p>
+
+<h2 id="erstellung-eines-menüpunktes">Erstellung eines Menüpunktes:</h2>
+
+<p>Um einen neuen Menüpunkt zu erstellen muss eine <strong>“.md”</strong> Datei erstellt werden. Diese muss in den ersten Zeilen folgendes beinhalten (wie bei <strong>about.md</strong>):</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>---
+layout: "Layout-Name"
+title: "Titel"
+permalink: "Link"
+---
+
+</code></pre>
+</div>
+
+<p>Es könnte zum Beispiel wie folg aussehen:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>---
+layout: page
+title: Jekyll-Doku
+permalink: /Jekyll-Doku/
+---
+
+</code></pre>
+</div>
+
+<p>Danach kann der Inhalt eingefügt werden.</p>
+
+<h2 id="bild-in-einem-post-hinzufügen">Bild in einem Post hinzufügen:</h2>
+
+<p>Um ein Bild in einen Post hinzuzufügen muss zuerst ein neuer Ordner erstellt werden. Dem Ordner kann einen beliebigen Namen besitzen, jedoch darf er nicht mit einen “_” anfangen. 
+Das Bild in den neu angelegten Ordner kopieren. Nun muss man im Post an der gewüschten Stelle folgendes eingeben:</p>
+
+<p><code class="highlighter-rouge">![Name-des-Bildes-in-HTML](/angelegter_Ordner/Name_des_Bildes.DateiFormat)</code></p>
+
+<p>Ein Beispiel:</p>
+
+<p><code class="highlighter-rouge">![Jekyll-Minima](/img/neue_jekyll_seite.JPG)</code></p>
+
+<p>Nun sollte das Bild im Post erscheinen.</p>
 
 <h1 id="jekyll-themes">Jekyll Themes:</h1>
 
@@ -127,6 +192,25 @@ Nun kann man in den meisten Fällen wie gewohnt in <code class="highlighter-roug
 und leitet diese Datei an den passenden Konverter (bei Markdown normalerweise <strong><a href="https://kramdown.gettalong.org/">KramDown</a></strong>) weiter, welcher die Markup-sprache in HTML umwandelt. 
 Zusammen mit einem ausgesuchtem oder einem benutzerdefiniertem <strong><a href="http://jekyllthemes.org/">Theme</a></strong> wird der Inhalt der Seite an eine <strong><a href="https://jekyllrb.com/docs/templates/">Template-Engine</a></strong> (in diesem Fall Liquid) weitergegeben, 
 welche es dem Nutzer unmöglich macht willkürlichen Code auf der Seite auszuführen.</p>
+
+<h1 id="git-hub">Git-Hub:</h1>
+
+<p>Damit ein Jekyll Webserver auf Git-Hub funktioniert muss die Datei <strong>.gitlab-ci.yml</strong> mit dem Folgenden Inhalt eingefügt werden:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>image: ruby
+
+pages:
+  stage: build
+  script:
+  - gem install jekyll
+  - jekyll build -d public
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
+</code></pre>
+</div>
 
   </div>
 </article>

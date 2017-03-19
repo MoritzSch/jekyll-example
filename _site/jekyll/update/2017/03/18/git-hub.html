@@ -6,14 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Wie wird das HTML generiert?</title>
-  <meta name="description" content="Die vom Benutzer mit einer beliebigen Markup-Sprache (Markdown, Textile usw.) erstellten Dateien werden von Jekyll durch die Endung der Datei, bei Markdown (...">
+  <title>Git-Hub</title>
+  <meta name="description" content="Git-Hub:">
 
   
   
   <link rel="stylesheet" href="http://localhost:4000/assets/style.css">
 
-  <link rel="canonical" href="http://localhost:4000/jekyll/update/2017/03/18/wie-wird-das-HTML-generiert.html">
+  <link rel="canonical" href="http://localhost:4000/jekyll/update/2017/03/18/git-hub.html">
   <link rel="alternate" type="application/rss+xml" title="Jekyll Doku" href="http://localhost:4000/feed.xml">
 
   <script async defer src="https://buttons.github.io/buttons.js"></script>
@@ -62,16 +62,30 @@
 
     <div>
       <article class="container px-2 mx-auto mb4" itemscope itemtype="http://schema.org/BlogPosting">
-  <h1 class="h0 col-9 sm-width-full py-4 mt-3 inline-block" itemprop="name headline">Wie wird das HTML generiert?</h1>
+  <h1 class="h0 col-9 sm-width-full py-4 mt-3 inline-block" itemprop="name headline">Git-Hub</h1>
   <div class="col-4 sm-width-full mt-1 border-top-thin ">
-    <p class="mb-3 py-2 bold h4"><time datetime="2017-03-18T19:00:00+01:00" itemprop="datePublished">Mar 18, 2017</time></p>
+    <p class="mb-3 py-2 bold h4"><time datetime="2017-03-18T18:00:00+01:00" itemprop="datePublished">Mar 18, 2017</time></p>
   </div>
 
   <div class="prose" itemprop="articleBody">
-      <p>Die vom Benutzer mit einer beliebigen <strong>Markup-Sprache</strong> (Markdown, Textile usw.) erstellten Dateien werden von <strong>Jekyll</strong> durch die Endung der Datei, bei Markdown <strong>(“.markdown”)</strong> erkannt 
-und leitet diese Datei an den passenden Konverter (bei Markdown normalerweise <strong><a href="https://kramdown.gettalong.org/">KramDown</a></strong>) weiter, welcher die Markup-sprache in HTML umwandelt. 
-Zusammen mit einem ausgesuchtem oder einem benutzerdefiniertem <strong><a href="http://jekyllthemes.org/">Theme</a></strong> wird der Inhalt der Seite an eine <strong><a href="https://jekyllrb.com/docs/templates/">Template-Engine</a></strong> (in diesem Fall Liquid) weitergegeben, 
-welche es dem Nutzer unmöglich macht willkürlichen Code auf der Seite auszuführen.</p>
+      <p>Git-Hub:</p>
+
+<p>Damit ein Jekyll Webserver auf Git-Hub funktioniert muss die Datei <strong>.gitlab-ci.yml</strong> mit dem Folgenden Inhalt eingefügt werden:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>image: ruby
+
+pages:
+  stage: build
+  script:
+  - gem install jekyll
+  - jekyll build -d public
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
+</code></pre>
+</div>
 
   </div>
 
@@ -82,20 +96,12 @@ welche es dem Nutzer unmöglich macht willkürlichen Code auf der Seite auszufü
 
 
 
-  <div class="col-4 sm-width-full left mr-lg-4 mt-3">
-    <a class="no-underline border-top-thin py-1 block" href="http://localhost:4000/jekyll/update/2017/03/18/git-hub.html">
-      <span class="h5 bold text-accent">Previous</span>
-      <p class="bold h3 link-primary mb-1">Git-Hub</p>
-      <p>Git-Hub: Damit ein Jekyll Webserver auf Git-Hub funktioniert muss die Datei .gitlab-ci.yml mit dem Folgenden Inhalt eingefügt werden: image: ruby...</p>
-    </a>
-  </div>
-  
   
   <div class="col-4 sm-width-full left mt-3">
-    <a class="no-underline border-top-thin py-1 block" href="http://localhost:4000/jekyll/update/2017/03/18/jekyll-themes.html">
+    <a class="no-underline border-top-thin py-1 block" href="http://localhost:4000/jekyll/update/2017/03/18/wie-wird-das-HTML-generiert.html">
       <span class="h5 bold text-accent">Next</span>
-      <p class="bold h3 link-primary mb-1">Jekyll Themes</p>
-      <p>Jekyll Themes: Ein Theme kann in zwei unterschiedliche Arten installiert werden. Gem-basiertes Themes: Eine Art ist das Theme als Gem...</p>
+      <p class="bold h3 link-primary mb-1">Wie wird das HTML generiert?</p>
+      <p>Die vom Benutzer mit einer beliebigen **Markup-Sprache** (Markdown, Textile usw.) erstellten Dateien werden von **Jekyll** durch die Endung der Datei,...</p>
     </a>
   </div>
 

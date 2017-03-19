@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Git-Hub"
-date:   2017-03-18 19:00:00 +0100
+date:   2017-03-18 18:00:00 +0100
 categories: jekyll update
 ---
 
@@ -23,5 +23,3 @@ pages:
   only:
   - master
  ```
-
- 

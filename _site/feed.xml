@@ -1,11 +1,69 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.4.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-03-19T12:38:41+01:00</updated><id>http://localhost:4000//</id><title type="html">Jekyll Doku</title><subtitle>Das ist die Dokumentation von Moritz Schaubeck und Sebastian Benda. Sie befasst sich mit dem Thema Jekyll (einem statischen Webseitengenerator).
-</subtitle><entry><title type="html">Wie wird das HTML generiert?</title><link href="http://localhost:4000/jekyll/update/2017/03/18/wie-wird-das-HTML-generiert.html" rel="alternate" type="text/html" title="Wie wird das HTML generiert?" /><published>2017-03-18T18:00:00+01:00</published><updated>2017-03-18T18:00:00+01:00</updated><id>http://localhost:4000/jekyll/update/2017/03/18/wie-wird-das-HTML-generiert</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2017/03/18/wie-wird-das-HTML-generiert.html">&lt;p&gt;Die vom Benutzer mit einer beliebigen &lt;strong&gt;Markup-Sprache&lt;/strong&gt; (Markdown, Textile usw.) erstellten Dateien werden von &lt;strong&gt;Jekyll&lt;/strong&gt; durch die Endung der Datei, bei Markdown &lt;strong&gt;(“.markdown”)&lt;/strong&gt; erkannt 
-und leitet diese Datei an den passenden Konverter (bei Markdown normalerweise &lt;strong&gt;&lt;a href=&quot;https://kramdown.gettalong.org/&quot;&gt;KramDown&lt;/a&gt;&lt;/strong&gt;) weiter, welcher die Markup-sprache in HTML umwandelt. 
-Zusammen mit einem ausgesuchtem oder einem benutzerdefiniertem &lt;strong&gt;&lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;Theme&lt;/a&gt;&lt;/strong&gt; wird der Inhalt der Seite an eine &lt;strong&gt;&lt;a href=&quot;https://jekyllrb.com/docs/templates/&quot;&gt;Template-Engine&lt;/a&gt;&lt;/strong&gt; (in diesem Fall Liquid) weitergegeben, 
-welche es dem Nutzer unmöglich macht willkürlichen Code auf der Seite auszuführen.&lt;/p&gt;</content><summary type="html">Die vom Benutzer mit einer beliebigen Markup-Sprache (Markdown, Textile usw.) erstellten Dateien werden von Jekyll durch die Endung der Datei, bei Markdown (“.markdown”) erkannt 
-und leitet diese Datei an den passenden Konverter (bei Markdown normalerweise KramDown) weiter, welcher die Markup-sprache in HTML umwandelt. 
-Zusammen mit einem ausgesuchtem oder einem benutzerdefiniertem Theme wird der Inhalt der Seite an eine Template-Engine (in diesem Fall Liquid) weitergegeben, 
-welche es dem Nutzer unmöglich macht willkürlichen Code auf der Seite auszuführen.</summary></entry><entry><title type="html">Jekyll Themes</title><link href="http://localhost:4000/jekyll/update/2017/03/18/jekyll-themes.html" rel="alternate" type="text/html" title="Jekyll Themes" /><published>2017-03-18T17:00:00+01:00</published><updated>2017-03-18T17:00:00+01:00</updated><id>http://localhost:4000/jekyll/update/2017/03/18/jekyll-themes</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2017/03/18/jekyll-themes.html">&lt;p&gt;Jekyll Themes:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.4.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-03-19T17:44:21+01:00</updated><id>http://localhost:4000//</id><title type="html">Jekyll Doku</title><subtitle>Das ist die Dokumentation von Moritz Schaubeck und Sebastian Benda. Sie befasst sich mit dem Thema Jekyll (einem statischen Webseitengenerator).
+</subtitle><entry><title type="html">Was ist Jekyll?</title><link href="http://localhost:4000/jekyll/update/2017/03/18/was-ist-jekyll.html" rel="alternate" type="text/html" title="Was ist Jekyll?" /><published>2017-03-18T23:00:00+01:00</published><updated>2017-03-18T23:00:00+01:00</updated><id>http://localhost:4000/jekyll/update/2017/03/18/was-ist-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2017/03/18/was-ist-jekyll.html">&lt;p&gt;Jekyll ist ein statischer Webseitengenerator, welcher normale Markup-Dateien (z. B. erstellt mit Markdown) in &lt;strong&gt;statisches HTML&lt;/strong&gt; umwandelt. 
+Außerdem basiert GitHub auf Jekyll, somit wird ermöglicht seine eigene Website kostenlos auf einem Github-Server zu hosten.&lt;/p&gt;
+
+&lt;p&gt;Des Weiteren ist es für den Benutzer möglich seine eigenen Blogs sehr leicht zu ändern und zu ersetzen. Dazu müssen nur die gespeicherten &lt;strong&gt;Markup-Dateien&lt;/strong&gt; in dem &lt;strong&gt;_posts&lt;/strong&gt; Ordner verändert, 
+Jekyll gestartet und somit eine statische HTML-Seite generiert werden.&lt;/p&gt;</content><summary type="html">Jekyll ist ein statischer Webseitengenerator, welcher normale Markup-Dateien (z. B. erstellt mit Markdown) in statisches HTML umwandelt. 
+Außerdem basiert GitHub auf Jekyll, somit wird ermöglicht seine eigene Website kostenlos auf einem Github-Server zu hosten.</summary></entry><entry><title type="html">Jekyll installieren</title><link href="http://localhost:4000/jekyll/update/2017/03/18/jekyll-installieren.html" rel="alternate" type="text/html" title="Jekyll installieren" /><published>2017-03-18T22:00:00+01:00</published><updated>2017-03-18T22:00:00+01:00</updated><id>http://localhost:4000/jekyll/update/2017/03/18/jekyll-installieren</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2017/03/18/jekyll-installieren.html">&lt;p&gt;Installation Windows:&lt;/p&gt;
+
+&lt;p&gt;Um Jekyll auf seinem eigenen Windows-Rechner nutzen zu können sollte man sich den Package-Manager &lt;strong&gt;&lt;a href=&quot;https://chocolatey.org/install&quot;&gt;Chocolatey&lt;/a&gt;&lt;/strong&gt; installieren. 
+Nachdem die Installation ausgeführt wurde öffnet man die Konsole als Administrator. Dort muss der Befehl &lt;code class=&quot;highlighter-rouge&quot;&gt;choco install ruby –y&lt;/code&gt; eingegeben werden, welcher die Installation von der aktuellsten Ruby-Version ausführt.&lt;/p&gt;
+
+&lt;p&gt;Nun muss der Befehl &lt;code class=&quot;highlighter-rouge&quot;&gt;gem install jekyll&lt;/code&gt; in die Konsole eingegeben werden um das “gem” jekyll zu installieren, welches benötigt wird um die HTML Seite zu generieren.&lt;/p&gt;
+
+&lt;p&gt;Jetzt gibt es die Möglichkeit seine erste Testseite mit dem Befehl &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll new Ordnername&lt;/code&gt; zu erstellen. Um den Testserver zu starten muss man in den erstellten Ordner navigieren und dort den Befehl &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt; ausführen. 
+Die Domain unter der die lokale Seite erreichbar ist wird nach einer kurzen Ladezeit in der Konsole angezeigt. Auf der entstandenen Website sieht man das Jekyll-Standard-Theme “minima”. Die Seite sollte nun wie folgt aussehen:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/neue_jekyll_seite.JPG&quot; alt=&quot;Jekyll-Minima&quot; /&gt;&lt;/p&gt;</content><summary type="html">Installation Windows:</summary></entry><entry><title type="html">Grundlegende Einstellungen</title><link href="http://localhost:4000/jekyll/update/2017/03/18/grundlegendes.html" rel="alternate" type="text/html" title="Grundlegende Einstellungen" /><published>2017-03-18T21:00:00+01:00</published><updated>2017-03-18T21:00:00+01:00</updated><id>http://localhost:4000/jekyll/update/2017/03/18/grundlegendes</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2017/03/18/grundlegendes.html">&lt;p&gt;Konfiguration der _config.yml:&lt;/p&gt;
+
+&lt;p&gt;Um die Startseite des Blogs anzupassen öffnet man die &lt;strong&gt;_config.yml&lt;/strong&gt;. Dort kann der Titel bei dem Unterpunkt &lt;code class=&quot;highlighter-rouge&quot;&gt;title:&lt;/code&gt; beliebig angepasst werden. Außerdem ist es möglich der Seite eine Beschreibung hinzuzufügen. 
+Dies ist durch den Unterpunkt &lt;code class=&quot;highlighter-rouge&quot;&gt;description:&lt;/code&gt; möglich. Weiterhin kann der Konverter bei dem Gliederungspunkt &lt;code class=&quot;highlighter-rouge&quot;&gt;markdown:&lt;/code&gt; angepasst werden. Standardmäßig steht dieser auf &lt;strong&gt;kranmdown&lt;/strong&gt; was die besten Möglichkeiten bietet.
+Bei &lt;code class=&quot;highlighter-rouge&quot;&gt;exclude:&lt;/code&gt; werden die Dateien eingetragen, die von dieser Konfiguration ausgeschlossen sind und somit auch nicht auf der seite angezeigt werden.&lt;/p&gt;
+
+&lt;p&gt;Erstellung eines Posts:&lt;/p&gt;
+
+&lt;p&gt;Um einen neuen Post zu erstellen müssen erst einige Konfigurationen getroffen werden. Die Datei, die den Post enthalten soll, muss im Namen immer ein Datum im Folgenden Format enthalten &lt;code class=&quot;highlighter-rouge&quot;&gt;2017-03-14-examplename&lt;/code&gt;,
+des Weiteren sollte immer mit der Dateiendung &lt;strong&gt;.markdown&lt;/strong&gt; verwendet werden. Außerdem ist es nötig die Datei mit einem &lt;code class=&quot;highlighter-rouge&quot;&gt;---&lt;/code&gt; zu starten. Unter diesen drei Bindestrichen werden die Grundlegenden YAML Anweisungen des Dokuments festgelegt. 
+Grundlegende Parameter sind: &lt;code class=&quot;highlighter-rouge&quot;&gt;layout:&lt;/code&gt; welcher bei einem Post auf &lt;code class=&quot;highlighter-rouge&quot;&gt;layout: post&lt;/code&gt; gesetzt ist, einem Titel: &lt;code class=&quot;highlighter-rouge&quot;&gt;title: &quot;exampleTitle&quot;&lt;/code&gt; und dem Datum: &lt;code class=&quot;highlighter-rouge&quot;&gt;date:2017-03-19 14:07:30 +0100&lt;/code&gt;. Diese YAML Anweisungen werden auch wieder durch &lt;code class=&quot;highlighter-rouge&quot;&gt;---&lt;/code&gt; beendet.&lt;/p&gt;
+
+&lt;p&gt;Erstellung eines Menüpunktes:&lt;/p&gt;
+
+&lt;p&gt;Um einen neuen Menüpunkt zu erstellen muss eine &lt;strong&gt;“.md”&lt;/strong&gt; Datei erstellt werden. Diese muss in den ersten Zeilen folgendes beinhalten (wie bei &lt;strong&gt;about.md&lt;/strong&gt;):&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;---
+layout: &quot;Layout-Name&quot;
+title: &quot;Titel&quot;
+permalink: &quot;Link&quot;
+---
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Es könnte zum Beispiel wie folg aussehen:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;---
+layout: page
+title: Jekyll-Doku
+permalink: /Jekyll-Doku/
+---
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Danach kann der Inhalt eingefügt werden.&lt;/p&gt;
+
+&lt;p&gt;Bild in einem Post hinzufügen:&lt;/p&gt;
+
+&lt;p&gt;Um ein Bild in einen Post hinzuzufügen muss zuerst ein neuer Ordner erstellt werden. Dem Ordner kann einen beliebigen Namen besitzen, jedoch darf er nicht mit einen “_” anfangen. 
+Das Bild in den neu angelegten Ordner kopieren. Nun muss man im Post an der gewüschten Stelle folgendes eingeben:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;![Name-des-Bildes-in-HTML](/angelegter_Ordner/Name_des_Bildes.DateiFormat)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Ein Beispiel:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;![Jekyll-Minima](/img/neue_jekyll_seite.JPG)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Nun sollte das Bild im Post erscheinen.&lt;/p&gt;</content><summary type="html">Konfiguration der _config.yml:</summary></entry><entry><title type="html">Jekyll Themes</title><link href="http://localhost:4000/jekyll/update/2017/03/18/jekyll-themes.html" rel="alternate" type="text/html" title="Jekyll Themes" /><published>2017-03-18T20:00:00+01:00</published><updated>2017-03-18T20:00:00+01:00</updated><id>http://localhost:4000/jekyll/update/2017/03/18/jekyll-themes</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2017/03/18/jekyll-themes.html">&lt;p&gt;Jekyll Themes:&lt;/p&gt;
 
 &lt;p&gt;Ein Theme kann in zwei unterschiedliche Arten installiert werden.&lt;/p&gt;
 
@@ -28,15 +86,27 @@ welche es dem Nutzer unmöglich macht willkürlichen Code auf der Seite auszufü
 &lt;p&gt;Die andere Möglichkeit ist, das Theme herunterzuladen z.B. als .zip-Datei. Auf der Website &lt;strong&gt;&lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;Jekyll-Themes&lt;/a&gt;&lt;/strong&gt; befinden sich eine Liste sehr viele Themes zum Herunterladen.&lt;/p&gt;
 
 &lt;p&gt;Um das Theme zu benutzen muss die .zip-Datei extrahiert werden. Der erstellte Ordner ist nun ein leere Jekyll-Website mit dem heruntergeladenen Theme. 
-Nun kann man in den meisten Fällen wie gewohnt in &lt;code class=&quot;highlighter-rouge&quot;&gt;_post&lt;/code&gt; seine Einträge erstellen und den Webserver starten.&lt;/p&gt;</content><summary type="html">Jekyll Themes:</summary></entry><entry><title type="html">Jekyll installieren</title><link href="http://localhost:4000/jekyll/update/2017/03/18/jekyll-installieren.html" rel="alternate" type="text/html" title="Jekyll installieren" /><published>2017-03-18T16:00:00+01:00</published><updated>2017-03-18T16:00:00+01:00</updated><id>http://localhost:4000/jekyll/update/2017/03/18/jekyll-installieren</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2017/03/18/jekyll-installieren.html">&lt;p&gt;Installation Windows:&lt;/p&gt;
+Nun kann man in den meisten Fällen wie gewohnt in &lt;code class=&quot;highlighter-rouge&quot;&gt;_post&lt;/code&gt; seine Einträge erstellen und den Webserver starten.&lt;/p&gt;</content><summary type="html">Jekyll Themes:</summary></entry><entry><title type="html">Wie wird das HTML generiert?</title><link href="http://localhost:4000/jekyll/update/2017/03/18/wie-wird-das-HTML-generiert.html" rel="alternate" type="text/html" title="Wie wird das HTML generiert?" /><published>2017-03-18T19:00:00+01:00</published><updated>2017-03-18T19:00:00+01:00</updated><id>http://localhost:4000/jekyll/update/2017/03/18/wie-wird-das-HTML-generiert</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2017/03/18/wie-wird-das-HTML-generiert.html">&lt;p&gt;Die vom Benutzer mit einer beliebigen &lt;strong&gt;Markup-Sprache&lt;/strong&gt; (Markdown, Textile usw.) erstellten Dateien werden von &lt;strong&gt;Jekyll&lt;/strong&gt; durch die Endung der Datei, bei Markdown &lt;strong&gt;(“.markdown”)&lt;/strong&gt; erkannt 
+und leitet diese Datei an den passenden Konverter (bei Markdown normalerweise &lt;strong&gt;&lt;a href=&quot;https://kramdown.gettalong.org/&quot;&gt;KramDown&lt;/a&gt;&lt;/strong&gt;) weiter, welcher die Markup-sprache in HTML umwandelt. 
+Zusammen mit einem ausgesuchtem oder einem benutzerdefiniertem &lt;strong&gt;&lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;Theme&lt;/a&gt;&lt;/strong&gt; wird der Inhalt der Seite an eine &lt;strong&gt;&lt;a href=&quot;https://jekyllrb.com/docs/templates/&quot;&gt;Template-Engine&lt;/a&gt;&lt;/strong&gt; (in diesem Fall Liquid) weitergegeben, 
+welche es dem Nutzer unmöglich macht willkürlichen Code auf der Seite auszuführen.&lt;/p&gt;</content><summary type="html">Die vom Benutzer mit einer beliebigen Markup-Sprache (Markdown, Textile usw.) erstellten Dateien werden von Jekyll durch die Endung der Datei, bei Markdown (“.markdown”) erkannt 
+und leitet diese Datei an den passenden Konverter (bei Markdown normalerweise KramDown) weiter, welcher die Markup-sprache in HTML umwandelt. 
+Zusammen mit einem ausgesuchtem oder einem benutzerdefiniertem Theme wird der Inhalt der Seite an eine Template-Engine (in diesem Fall Liquid) weitergegeben, 
+welche es dem Nutzer unmöglich macht willkürlichen Code auf der Seite auszuführen.</summary></entry><entry><title type="html">Git-Hub</title><link href="http://localhost:4000/jekyll/update/2017/03/18/git-hub.html" rel="alternate" type="text/html" title="Git-Hub" /><published>2017-03-18T18:00:00+01:00</published><updated>2017-03-18T18:00:00+01:00</updated><id>http://localhost:4000/jekyll/update/2017/03/18/git-hub</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2017/03/18/git-hub.html">&lt;p&gt;Git-Hub:&lt;/p&gt;
 
-&lt;p&gt;Um Jekyll auf seinem eigenen Windows-Rechner nutzen zu können sollte man sich den Package-Manager &lt;strong&gt;&lt;a href=&quot;https://chocolatey.org/install&quot;&gt;Chocolatey&lt;/a&gt;&lt;/strong&gt; installieren. 
-Nachdem die Installation ausgeführt wurde öffnet man die Konsole als Administrator. Dort muss der Befehl &lt;code class=&quot;highlighter-rouge&quot;&gt;choco install ruby –y&lt;/code&gt; eingegeben werden, welcher die Installation von der aktuellsten Ruby-Version ausführt.&lt;/p&gt;
+&lt;p&gt;Damit ein Jekyll Webserver auf Git-Hub funktioniert muss die Datei &lt;strong&gt;.gitlab-ci.yml&lt;/strong&gt; mit dem Folgenden Inhalt eingefügt werden:&lt;/p&gt;
 
-&lt;p&gt;Jetzt gibt es die Möglichkeit seine erste Testseite mit dem Befehl &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll new Ordnername&lt;/code&gt; zu erstellen. Um den Testserver zu starten muss man in den erstellten Ordner navigieren und dort den Befehl &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt; ausführen. 
-Die Domain unter der die lokale Seite erreichbar ist wird nach einer kurzen Ladezeit in der Konsole angezeigt.&lt;/p&gt;</content><summary type="html">Installation Windows:</summary></entry><entry><title type="html">Was ist Jekyll?</title><link href="http://localhost:4000/jekyll/update/2017/03/18/was-ist-jekyll.html" rel="alternate" type="text/html" title="Was ist Jekyll?" /><published>2017-03-18T15:00:00+01:00</published><updated>2017-03-18T15:00:00+01:00</updated><id>http://localhost:4000/jekyll/update/2017/03/18/was-ist-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2017/03/18/was-ist-jekyll.html">&lt;p&gt;Jekyll ist ein statischer Webseitengenerator, welcher normale Markup-Dateien (z. B. erstellt mit Markdown) in &lt;strong&gt;statisches HTML&lt;/strong&gt; umwandelt. 
-Außerdem basiert GitHub auf Jekyll, somit wird ermöglicht seine eigene Website kostenlos auf einem Github-Server zu hosten.&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;image: ruby
 
-&lt;p&gt;Des Weiteren ist es für den Benutzer möglich seine eigenen Blogs sehr leicht zu ändern und zu ersetzen. Dazu müssen nur die gespeicherten &lt;strong&gt;Markup-Dateien&lt;/strong&gt; in dem &lt;strong&gt;_posts&lt;/strong&gt; Ordner verändert, 
-Jekyll gestartet und somit eine statische HTML-Seite generiert werden.&lt;/p&gt;</content><summary type="html">Jekyll ist ein statischer Webseitengenerator, welcher normale Markup-Dateien (z. B. erstellt mit Markdown) in statisches HTML umwandelt. 
-Außerdem basiert GitHub auf Jekyll, somit wird ermöglicht seine eigene Website kostenlos auf einem Github-Server zu hosten.</summary></entry></feed>
+pages:
+  stage: build
+  script:
+  - gem install jekyll
+  - jekyll build -d public
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</content><summary type="html">Git-Hub:</summary></entry></feed>
