@@ -42,7 +42,7 @@ Bei ``exclude:`` werden die Dateien eingetragen, die von dieser Konfiguration au
 
 ## Erstellung eines Posts:
 
-Um einen neuen Post zu erstellen müssen erst einige Konfigurationen getroffen werden. Die Datei, die den Post enthalten soll, muss im Namen immer ein Datum im Folgenden Format enthalten ``2017-03-14-examplename``,
+Um einen neuen Post zu erstellen müssen erst einige Konfigurationen getroffen werden. Die Datei, die den Post enthalten soll, muss im Namen immer ein Datum im folgenden Format enthalten ``2017-03-14-examplename``,
 des Weiteren sollte immer mit der Dateiendung **.markdown** verwendet werden. Außerdem ist es nötig die Datei mit einem ``---`` zu starten. Unter diesen drei Bindestrichen werden die Grundlegenden YAML Anweisungen des Dokuments festgelegt. 
 Grundlegende Parameter sind: ``layout:`` welcher bei einem Post auf ``layout: post`` gesetzt ist, einem Titel: ``title: "exampleTitle"`` und dem Datum: ``date:2017-03-19 14:07:30 +0100``. Diese YAML Anweisungen werden auch wieder durch ``---`` beendet.
 
@@ -60,7 +60,7 @@ permalink: "Link"
 
 ```
 
-Es könnte zum Beispiel wie folg aussehen:
+Es könnte zum Beispiel wie folgt aussehen:
 
 ```
 ---
@@ -76,7 +76,7 @@ Danach kann der Inhalt eingefügt werden.
 
 ## Bild in einem Post hinzufügen:
 
-Um ein Bild in einen Post hinzuzufügen muss zuerst ein neuer Ordner erstellt werden. Dem Ordner kann einen beliebigen Namen besitzen, jedoch darf er nicht mit einen "_" anfangen. 
+Um ein Bild in einen Post hinzuzufügen muss zuerst ein neuer Ordner erstellt werden. Der Ordner kann einen beliebigen Namen besitzen, jedoch darf er nicht mit einen "_" anfangen. 
 Das Bild in den neu angelegten Ordner kopieren. Nun muss man im Post an der gewünschten Stelle folgendes eingeben: 
 
 `![Name-des-Bildes-in-HTML]({{ site.baseurl }}/angelegter_Ordner/Name_des_Bildes.DateiFormat)`
@@ -103,14 +103,14 @@ Im Folgenden wird das Standart-Theme **Minima** durch das **Swiss** Theme ausget
 3. Bearbeiten der **_config.yml**: In der _config.yml muss das Theme geändert werden. Die Zeile `theme: minima` muss durch `theme: jekyll-swiss` ersetzt werden.
 4. Neustarten des Webservers. 
 
-Der große Vorteil dieser Themes ist, dass man so sehr leicht verschiedene Themes austauschen und ausprobieren kann ohne größeren Aufwand.
+Der große Vorteil dieser Themes ist, dass man so leicht ohne größeren Aufwand verschiedene Themes austauschen und ausprobieren kann.
 
 
 ## Classic Themes:
 
-Die andere Möglichkeit ist, das Theme herunterzuladen z.B. als .zip-Datei. Auf der Website **[Jekyll-Themes](http://jekyllthemes.org/)** befinden sich eine Liste sehr viele Themes zum Herunterladen. 
+Die andere Möglichkeit ist, das Theme herunterzuladen z.B. als .zip-Datei. Auf der Website **[Jekyll-Themes](http://jekyllthemes.org/)** befindet sich eine Liste sehr vieler Themes zum Herunterladen. 
 
-Um das Theme zu benutzen muss die .zip-Datei extrahiert werden. Der erstellte Ordner ist nun ein leere Jekyll-Website mit dem heruntergeladenen Theme. 
+Um das Theme zu benutzen muss die .zip-Datei extrahiert werden. Der erstellte Ordner ist nun eine leere Jekyll-Website mit dem heruntergeladenen Theme. 
 Nun kann man in den meisten Fällen wie gewohnt in `_post` seine Einträge erstellen und den Webserver starten. 
 
 

@@ -20,12 +20,12 @@ Im Folgenden wird das Standart-Theme **Minima** durch das **Swiss** Theme ausget
 3. Bearbeiten der **_config.yml**: In der _config.yml muss das Theme geändert werden. Die Zeile `theme: minima` muss durch `theme: jekyll-swiss` ersetzt werden.
 4. Neustarten des Webservers. 
 
-Der große Vorteil dieser Themes ist, dass man so sehr leicht verschiedene Themes austauschen und ausprobieren kann ohne größeren Aufwand.
+Der große Vorteil dieser Themes ist, dass man so leicht ohne größeren Aufwand verschiedene Themes austauschen und ausprobieren kann ohne größeren Aufwand.
 
 
 Classic Themes:
 
-Die andere Möglichkeit ist, das Theme herunterzuladen z.B. als .zip-Datei. Auf der Website **[Jekyll-Themes](http://jekyllthemes.org/)** befinden sich eine Liste sehr viele Themes zum Herunterladen. 
+Die andere Möglichkeit ist, das Theme herunterzuladen z.B. als .zip-Datei. Auf der Website **[Jekyll-Themes](http://jekyllthemes.org/)** befindet sich eine Liste sehr vieler Themes zum Herunterladen. 
 
-Um das Theme zu benutzen muss die .zip-Datei extrahiert werden. Der erstellte Ordner ist nun ein leere Jekyll-Website mit dem heruntergeladenen Theme. 
+Um das Theme zu benutzen muss die .zip-Datei extrahiert werden. Der erstellte Ordner ist nun eine leere Jekyll-Website mit dem heruntergeladenen Theme. 
 Nun kann man in den meisten Fällen wie gewohnt in `_post` seine Einträge erstellen und den Webserver starten. 

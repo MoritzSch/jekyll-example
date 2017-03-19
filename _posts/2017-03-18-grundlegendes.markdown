@@ -12,7 +12,7 @@ Bei ``exclude:`` werden die Dateien eingetragen, die von dieser Konfiguration au
 
 Erstellung eines Posts:
 
-Um einen neuen Post zu erstellen müssen erst einige Konfigurationen getroffen werden. Die Datei, die den Post enthalten soll, muss im Namen immer ein Datum im Folgenden Format enthalten ``2017-03-14-examplename``,
+Um einen neuen Post zu erstellen müssen erst einige Konfigurationen getroffen werden. Die Datei, die den Post enthalten soll, muss im Namen immer ein Datum im folgenden Format enthalten ``2017-03-14-examplename``,
 des Weiteren sollte immer mit der Dateiendung **.markdown** verwendet werden. Außerdem ist es nötig die Datei mit einem ``---`` zu starten. Unter diesen drei Bindestrichen werden die Grundlegenden YAML Anweisungen des Dokuments festgelegt. 
 Grundlegende Parameter sind: ``layout:`` welcher bei einem Post auf ``layout: post`` gesetzt ist, einem Titel: ``title: "exampleTitle"`` und dem Datum: ``date:2017-03-19 14:07:30 +0100``. Diese YAML Anweisungen werden auch wieder durch ``---`` beendet.
 
@@ -30,7 +30,7 @@ permalink: "Link"
 
 ```
 
-Es könnte zum Beispiel wie folg aussehen:
+Es könnte zum Beispiel wie folgt aussehen:
 
 ```
 ---
@@ -46,7 +46,7 @@ Danach kann der Inhalt eingefügt werden.
 
 Bild in einem Post hinzufügen:
 
-Um ein Bild in einen Post hinzuzufügen muss zuerst ein neuer Ordner erstellt werden. Dem Ordner kann einen beliebigen Namen besitzen, jedoch darf er nicht mit einen "_" anfangen. 
+Um ein Bild in einen Post hinzuzufügen muss zuerst ein neuer Ordner erstellt werden. Der Ordner kann einen beliebigen Namen besitzen, jedoch darf er nicht mit einen "_" anfangen. 
 Das Bild in den neu angelegten Ordner kopieren. Nun muss man im Post an der gewünschten Stelle folgendes eingeben: 
 
 `![Name-des-Bildes-in-HTML]({{ site.baseurl }}/angelegter_Ordner/Name_des_Bildes.DateiFormat)`
